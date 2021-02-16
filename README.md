@@ -15,39 +15,45 @@ Show your component hierarchy here! Use this as an example.
 
 API and Data Sample
 Show us a snippet of JSON returned by your Airtable (you can find it under the API documentation) so we know you can access it and get the info you need. This must be properly formatted. An example is below:
-
+```json
 {
     "records": [
         {
-            "id": "recONRzIUTuZ5lXaF",
+            "id": "recN6ggQxM7KTgokV",
             "fields": {
-                "author": "Liz Yrineo",
-                "setup": "Why did the tomato turn red?",
-                "punchline": "Because it saw the salad dressing!"
+                "Title": "Sauerkraut",
+                "Date": "9/21/2020",
+                "Ingredients": "2.5k caraflex cabbage\n46g salt",
+                "Method": "cabbage shredded, transferred to 2gal crock, and salted\nmuddled after 2 hours\nweight placed and covered\nfermented at room temp",
+                "Notes": "yeastybois"
             },
-            "createdTime": "2020-11-30T16:03:09.000Z"
+            "createdTime": "2021-02-16T15:37:00.000Z"
         },
         {
-            "id": "rec3oYZ5Tp0AIDsKe",
+            "id": "recTOGq7ZS8SnLNNY",
             "fields": {
-                "author": "Rachel Moskowitz",
-                "setup": "What did the green grape say to the red grape?",
-                "punchline": "Breathe, idiot, breathe!"
+                "Title": "Riesling",
+                "Date": "8/15/2020",
+                "Ingredients": "riesling must concentrate\nwater\nwild yeast culture",
+                "Method": "must concentrate diluted to 1.091\nyeast pitched with 6g Fermfast nutrients\nfermented at 65F for 1 month until gravity of .998 reached\nbottled with 32p...",
+                "Field 1 Title": "Starting Gravity",
+                "Field 1 Text": "1.091",
+                "Field 2 Title": "Final Gravity",
+                "Field 2 Text": ".998",
+                "Field 3 Title": "SO2",
+                "Field 3 Text": "32ppm"
             },
-            "createdTime": "2020-11-30T16:03:09.000Z"
+            "createdTime": "2021-02-16T15:37:00.000Z"
         },
         {
-            "id": "recA34tOaoE1IVeC1",
-            "fields": {
-                "author": "Gary Grant",
-                "setup": "How do you make holy water?",
-                "punchline": "You boil the hell out of it!"
-            },
-            "createdTime": "2020-11-30T16:03:09.000Z"
+            "id": "recfrOJHmr49uDYvC",
+            "fields": {},
+            "createdTime": "2021-02-16T15:37:00.000Z"
         }
     ],
-    "offset": "recA34tOaoE1IVeC1"
+    "offset": "recfrOJHmr49uDYvC"
 }
+```
 MVP/PostMVP
 The functionality will then be divided into two separate lists: MVP and PostMVP. Carefully decide what is placed into your MVP, as the client will expect this functionality to be implemented upon project completion.
 
