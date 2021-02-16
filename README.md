@@ -79,21 +79,21 @@ Fermently is an Airtable-based application.
 
 
 ## Project Schedule
-
-Day	Deliverable	Status
-February 16	Prompt / Wireframes / Priority Matrix / Timeframes  Complete
-February 16	Project Approval	Incomplete
-February 16	Pseudocode	Incomplete
-February 17	Core Application Structure (HTML, React component structure), Airtable exploration 	Incomplete
-February 18	Initial Clickable Model, CSS styling	Incomplete
-February 19	MVP	Incomplete
-February 20 Post-MVP
-February 23	Presentations	Incomplete
+|  Day | Deliverable | Status
+|---|---| ---|
+|Feb 16| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
+|Feb 16| Project Approval | Incomplete
+|Feb 16| Pseudocode| Incomplete
+|Feb 17| Core Application Structure (HTML, React component structure), Airtable exploration|Incomplete
+Feb 18	Initial Clickable Model, CSS styling	Incomplete
+Feb 19	MVP	Incomplete
+Feb 20 Post-MVP
+Feb 23	Presentations	Incomplete
 
 ## Timeframes
 
 | Component | Priority | Estimated Time | Actual Time |
-| Core app html ||H||1hr|	|-|
+| Core app html |   H   | 1hr | -   |
 Component structure and function    H   4hrs   -
 API data integration    H   2hrs -
 Formatting project display H    4hrs    -
