@@ -67,6 +67,7 @@ Connect to Airtable API
 Render existing project titles in sidebar
 Sidebar projects link to detailed view
 Allow user to create projects with at least 4 custom fields, letting them tailor the application to a wide variety of use cases.
+Unused fields will not be rendered
 Edit form to make adjustments and updates to projects
 Media query for mobile-friendly layout (potentially mobile-first design so I would mostly be using this from my phone)
 
