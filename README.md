@@ -6,8 +6,9 @@ Project Description
 An open-ended application that can be tailored to track information about a wide variety of fermentation projects from beer and wine to lactofermented vegetables or whatever else you can imagine.
 
 Wireframes
+
 ![alt text](https://i.imgur.com/5FzJaaAl.png "Wireframe - Home")
-![alt text](https://i.imgur.com/3Re6I6X.png "Wireframe - Add")
+![alt text](https://i.imgur.com/3Re6I6Xl.png "Wireframe - Add")
 
 Component Hierarchy
 Show your component hierarchy here! Use this as an example.
