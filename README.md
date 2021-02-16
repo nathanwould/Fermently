@@ -9,16 +9,20 @@ Fermently
 An open-ended application that can be tailored to track information about a wide variety of fermentation projects from beer and wine to lactofermented vegetables or whatever else you can imagine.
 
 ## Wireframes
-
+### Home page
 ![alt text](https://i.imgur.com/v3Q4ufnl.png "Wireframe - Home")
+### Category View
 ![alt text](https://i.imgur.com/N9j01Lsl.png "Wireframe - Category View")
+### Detailed View
 ![alt text](https://i.imgur.com/z7y4ih2l.png "Wireframe - Details")
+### New Project Form
 ![alt text](https://i.imgur.com/NRViDT5l.png "Wireframe - Add")
+### Help Page
 ![alt text](https://i.imgur.com/XGutoOsl.png "Wireframe - Help")
 
 ## Component Hierarchy 
 
-![alt text](https://i.imgur.com/UevUBrEl.png "Component Heirarchy")
+![alt text](https://i.imgur.com/r0IdrvHl.png "Component Heirarchy")
 
 ## API and Data Sample
 
