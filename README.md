@@ -10,8 +10,11 @@ An open-ended application that can be tailored to track information about a wide
 
 ## Wireframes
 
-![alt text](https://i.imgur.com/5FzJaaAl.png "Wireframe - Home")
-![alt text](https://i.imgur.com/3Re6I6Xl.png "Wireframe - Add")
+![alt text](https://i.imgur.com/v3Q4ufnl.png "Wireframe - Home")
+![alt text](https://i.imgur.com/N9j01Lsl.png "Wireframe - Category View")
+![alt text](https://i.imgur.com/z7y4ih2l.png "Wireframe - Details")
+![alt text](https://i.imgur.com/NRViDT5l.png "Wireframe - Add")
+![alt text](https://i.imgur.com/XGutoOsl.png "Wireframe - Help")
 
 ## Component Hierarchy 
 
