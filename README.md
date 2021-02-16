@@ -63,19 +63,19 @@ Fermently is an Airtable-based application.
 
 ## MVP
 
-Connect to Airtable API
-Render existing project titles in sidebar
-Sidebar projects link to detailed view
-Allow user to create projects with at least 4 custom fields, letting them tailor the application to a wide variety of use cases.
-Unused fields will not be rendered
-Edit form to make adjustments and updates to projects
-Media query for mobile-friendly layout (potentially mobile-first design so I would mostly be using this from my phone)
+- Connect to Airtable API
+- Render existing project titles in sidebar
+- Sidebar projects link to detailed view
+- Allow user to create projects with at least 4 custom fields, letting them tailor the application to a wide variety of use - cases.
+- Unused fields will not be rendered
+- Edit form to make adjustments and updates to projects
+- Media query for mobile-friendly layout (potentially mobile-first design so I would mostly be using this from my phone)
 
 ## PostMVP
 
-Greater styling - smooth transition animations and visual styling to give it a fermentation visual theme.
-Additional custom fields
-Resource page with links to troubleshooting help and project ideas.
+- Greater styling - smooth transition animations and visual styling to give it a fermentation visual theme.
+- Additional custom fields
+- Resource page with links to troubleshooting help and project ideas.
 
 
 ## Project Schedule
@@ -92,8 +92,8 @@ February 23	Presentations	Incomplete
 
 ## Timeframes
 
-Component	Priority	Estimated Time	Actual Time
-Core app html	H	1hr	-
+| Component | Priority | Estimated Time | Actual Time |
+| Core app html ||H||1hr|	|-|
 Component structure and function    H   4hrs   -
 API data integration    H   2hrs -
 Formatting project display H    4hrs    -
