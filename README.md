@@ -11,10 +11,10 @@ Wireframes
 ![alt text](https://i.imgur.com/3Re6I6Xl.png "Wireframe - Add")
 
 Component Hierarchy
-Show your component hierarchy here! Use this as an example.
+![alt text](https://i.imgur.com/UevUBrEl.png "Component Heirarchy")
 
 API and Data Sample
-Show us a snippet of JSON returned by your Airtable (you can find it under the API documentation) so we know you can access it and get the info you need. This must be properly formatted. An example is below:
+
 ```json
 {
     "records": [
