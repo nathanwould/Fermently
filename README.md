@@ -113,4 +113,4 @@ Total	-	30hrs	-
 Strengths: My project idea is coming from an actual need: many apps I've used have been too tailed to one specific type of fermentation project and their specificity has made them ONLY useable for that one thing. My application is less detailed (no fancy charts) but more open-ended  to track high-level data and a few specifics about whatever you might be working on.
 Weaknesses: I'm going to have to figure out how to collect more than just single-line data, like an ingredients list, and store it in airtable in a way where I can cleanly access it to display it in easily recognizable formats like a bulleted list.
 Opportunities: To fill an actual need in my life and store information about my projects in an easily accessible format.
-Threats: Ending up with a huge, confusing Airtable spreadsheet that is very difficult to store and render data from.
+Threats: Ending up with a huge, confusing Airtable spreadsheet that is very difficult to store and render data from. To mitigate this I've dedicated a full half-day to researching Airtable so I can best understand how best to collect data through the form so I can cleanly render it.
