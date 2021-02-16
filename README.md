@@ -1,19 +1,25 @@
-Project Overview
-Project Name
+# Project Overview
+
+## Project Name
+
 Fermently
 
-Project Description
+## Project Description
+
 An open-ended application that can be tailored to track information about a wide variety of fermentation projects from beer and wine to lactofermented vegetables or whatever else you can imagine.
 
-Wireframes
+## Wireframes
 
 ![alt text](https://i.imgur.com/5FzJaaAl.png "Wireframe - Home")
 ![alt text](https://i.imgur.com/3Re6I6Xl.png "Wireframe - Add")
 
-Component Hierarchy  
+## Component Hierarchy 
+
 ![alt text](https://i.imgur.com/UevUBrEl.png "Component Heirarchy")
 
-API and Data Sample
+## API and Data Sample
+
+Fermently is an Airtable-based application.
 
 ```json
 {
@@ -54,42 +60,56 @@ API and Data Sample
     "offset": "recfrOJHmr49uDYvC"
 }
 ```
-MVP/PostMVP
-The functionality will then be divided into two separate lists: MVP and PostMVP. Carefully decide what is placed into your MVP, as the client will expect this functionality to be implemented upon project completion.
 
-MVP
-These are examples only. Replace with your own MVP features.
+## MVP
 
-Find and use external api
-Render data on page
-Allow user to choose favorites
-PostMVP
-These are examples only. Replace with your own Post-MVP features.
+Connect to Airtable API
+Render existing project titles in sidebar
+Sidebar projects link to detailed view
+Allow user to create projects with at least 4 custom fields, letting them tailor the application to a wide variety of use cases.
+Edit form to make adjustments and updates to projects
+Media query for mobile-friendly layout (potentially mobile-first design so I would mostly be using this from my phone)
 
-Add second API
-Use local storage to save user favorites
-Project Schedule
-This schedule will be used to keep track of your progress throughout the week and align with our expectations. Here's an example.
+## PostMVP
+
+Greater styling - smooth transition animations and visual styling to give it a fermentation visual theme.
+Additional custom fields
+Resource page with links to troubleshooting help and project ideas.
+
+
+## Project Schedule
 
 Day	Deliverable	Status
-July 10-12	Prompt / Wireframes / Priority Matrix / Timeframes	Incomplete
-July 13	Project Approval	Incomplete
-July 13	Core Application Structure (HTML, CSS, etc.)	Incomplete
-July 14	Pseudocode / actual code	Incomplete
-July 15	Initial Clickable Model	Incomplete
-July 16	MVP	Incomplete
-July 17	Presentations	Incomplete
-Timeframes
-Tell us how long you anticipate spending on each area of development. Be sure to consider how many hours a day you plan to be coding and how many days you have available until presentation day.
+February 16	Prompt / Wireframes / Priority Matrix / Timeframes  Complete
+February 16	Project Approval	Incomplete
+February 16	Pseudocode	Incomplete
+February 17	Core Application Structure (HTML, React component structure), Airtable exploration 	Incomplete
+February 18	Initial Clickable Model, CSS styling	Incomplete
+February 19	MVP	Incomplete
+February 20 Post-MVP
+February 23	Presentations	Incomplete
 
-Time frames are also key in the development cycle. You have limited time to code all parts of your app. Your estimates can then be used to evalute possibilities based on time needed and the actual time you have before the app must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add an additional hour or two to each component to play it safe. Throughout your project, keep track of your Time Invested and Actual Time and update your README regularly.
+## Timeframes
 
-Component	Priority	Estimated Time	Time Invested	Actual Time
-Adding Form	H	3hrs	3.5hrs	3.5hrs
-Working with API	H	3hrs	2.5hrs	2.5hrs
-Total	H	6hrs	5hrs	5hrs
-SWOT Analysis
-Strengths:
-Weaknesses:
-Opportunities:
-Threats:
+Component	Priority	Estimated Time	Actual Time
+Core app html	H	1hr	-
+Component structure and function    H   4hrs   -
+API data integration    H   2hrs -
+Formatting project display H    4hrs    -
+Airtable exploration	H	4hrs	-
+Formatting new project form	H	4hrs	-
+Edit form functionality H   2hrs    -
+CSS styling   H   2hrs    -
+Adding resources    L   2hrs    -
+Adding additional custom fields M   2hrs    -
+Adding styling to look more ferment-y   L   2hrs    -
+Transitions M   1hr -
+
+Total	-	30hrs	-
+
+## SWOT Analysis
+
+Strengths: My project idea is coming from an actual need: many apps I've used have been too tailed to one specific type of fermentation project and their specificity has made them ONLY useable for that one thing. My application is less detailed (no fancy charts) but more open-ended  to track high-level data and a few specifics about whatever you might be working on.
+Weaknesses: I'm going to have to figure out how to collect more than just single-line data, like an ingredients list, and store it in airtable in a way where I can cleanly access it to display it in easily recognizable formats like a bulleted list.
+Opportunities: To fill an actual need in my life and store information about my projects in an easily accessible format.
+Threats: Ending up with a huge, confusing Airtable spreadsheet that is very difficult to store and render data from.
