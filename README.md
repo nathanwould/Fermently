@@ -106,7 +106,6 @@ Fermently is an Airtable-based application.
 |Adding additional custom fields | M | 2hrs | -
 |Adding styling to look more ferment-y | L | 2hrs | -
 |Transitions| M | 1hr | -
-
 |Total|	- | 30hrs | -
 
 ## SWOT Analysis
