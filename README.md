@@ -10,7 +10,7 @@ Wireframes
 ![alt text](https://i.imgur.com/5FzJaaAl.png "Wireframe - Home")
 ![alt text](https://i.imgur.com/3Re6I6Xl.png "Wireframe - Add")
 
-Component Hierarchy
+Component Hierarchy  
 ![alt text](https://i.imgur.com/UevUBrEl.png "Component Heirarchy")
 
 API and Data Sample
