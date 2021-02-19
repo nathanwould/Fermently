@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Route, Link } from "react-router-dom";
 
 function Wine(props) {
   if (!props) {
@@ -17,12 +17,12 @@ function Wine(props) {
         <h2>Wines</h2>
         {wines.map((wine, idx) => (
           <div className="wine">
-            <Link key={idx} to={`/wine/${wine.fields.title}`}>
+            <Link key={idx} to={`/${wine.fields.id}`}>
               <h4>{wine.fields.title}</h4>
             </Link>
           </div>
         ))}
-      </div>
+        </div>
     );
   }
 }

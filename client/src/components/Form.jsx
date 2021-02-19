@@ -170,6 +170,7 @@ function Form(props) {
         onChange={(e) => setNotes(e.target.value)}
         value={notes}
       />
+      <button type="submit">Submit</button>
     </form>
   );
 }

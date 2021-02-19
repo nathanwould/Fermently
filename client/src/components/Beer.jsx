@@ -17,7 +17,7 @@ function Beer(props) {
         <h2>Beers</h2>
         {beers.map((beer, idx) => (
           <div className="Beer">
-            <Link key={idx} to={`/beer/${beer.fields.title}`}>
+            <Link key={idx} to={`/${beer.fields.title}`}>
               <h4>{beer.fields.title}</h4>
             </Link>
           </div>

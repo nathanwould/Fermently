@@ -5,7 +5,12 @@ import { baseURL, config } from "./services/index.js";
 import Nav from "./components/Nav";
 import Home from "./components/Home";
 import Sidebar from "./components/Sidebar";
+import Wine from "./components/Wine";
+import Beer from "./components/Beer";
+import Pickles from "./components/Pickles";
+import Form from "./components/Form";
 import './App.css';
+import Details from "./components/Details.jsx";
 
 // console.log(baseURL, config)
 
@@ -26,7 +31,24 @@ function App() {
       <div className="App">
         <Nav />
         <Sidebar id="sideBar" projects={projects} setToggleFetch={setToggleFetch}/>
-        <Home />
+        <Route exact path="/">
+          <Home id="home" />
+        </Route>
+        <Route path="/wine">
+          <Wine projects={projects} />
+        </Route>
+        <Route path="/beer">
+          <Beer projects={projects} />
+        </Route>
+        <Route path="/pickles">
+          <Pickles projects={projects} />
+        </Route>
+        <Route path="/new">
+        <Form projects={projects} setToggleFetch={setToggleFetch}/>
+        </Route>
+        <Route id="details" path="/id">
+          <Details projects={projects}/>
+        </Route>
       </div>
     );
 }

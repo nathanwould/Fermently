@@ -14,11 +14,11 @@ function Pickles(props) {
     );
 
     return (
-      <div className="Pickles">
+      <div className="pickles">
         <h2>Pickles</h2>
         {pickles.map((pickle, idx) => (
           <div className="pickle">
-            <Link key={idx} to={`/pickle/${pickle.fields.title}`}>
+            <Link key={idx} to={`/${pickle.fields.title}`}>
               <h4>{pickle.fields.title}</h4>
             </Link>
           </div>
