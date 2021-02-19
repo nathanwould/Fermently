@@ -20,15 +20,15 @@ function App() {
       // console.log(projects)
     };
     getData();
-  }, []);
-  // console.log(projects)
-  return (
-    <div className="App">
-      <Nav />
-      <Sidebar id="sideBar" projects={projects}/>
-      <Home />
-    </div>
-  );
+  }, [toggleFetch]);
+  
+    return (
+      <div className="App">
+        <Nav />
+        <Sidebar id="sideBar" projects={projects} setToggleFetch={setToggleFetch}/>
+        <Home />
+      </div>
+    );
 }
 
 export default App;

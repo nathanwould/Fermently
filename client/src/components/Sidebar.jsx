@@ -12,7 +12,7 @@ function Sidebar(props) {
       <Wine projects={projects} />
       <Beer projects={projects} />
       <Pickles projects={projects} />
-      <Form projects={projects} />
+      <Form projects={projects} setToggleFetch={props.setToggleFetch}/>
     </div>
   );
 }

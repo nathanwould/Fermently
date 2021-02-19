@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 
 function Beer(props) {
-  console.log(props.projects);
   if (!props) {
     return (
       <div>
@@ -12,7 +11,7 @@ function Beer(props) {
     const beers = props.projects.records.filter(
       (project) => project.fields.category === "Beer"
     );
-    console.log(beers);
+
     return (
       <div className="Beers">
         <h2>Beers</h2>
