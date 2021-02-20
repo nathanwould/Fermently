@@ -1,32 +1,32 @@
 import { Route, Link } from "react-router-dom";
+import { useEffect, useState } from "react";
 import Details from "./Details";
 
 function Wine(props) {
-  if (!props) {
-    return (
-      <div>
-        <h3>Loading...</h3>
-      </div>
-    );
-  } else {
-    const wines = props.projects.records.filter(
+  const [wines, setWines] = useState([]);
+
+  useEffect(() => {
+      if (props.projects) {
+    const dataPlease = props.projects?.filter(
       (project) => project.fields.category === "Wine"
     );
-
-    return (
+        setWines(dataPlease)
+      }
+    }, [props.projects])
+  
+return (
       <div className="wines">
         <h2>Wines</h2>
         {wines.map((wine, idx) => (
           <div className="wine">
-            <Link key={idx} to={`/${wine.id}`}>
+            <Link key={idx} to={`/project/${wine.id}`}>
               <h4>{wine.fields.title}</h4>
             </Link>
-            <Details />
           </div>
         ))}
         </div>
     );
   }
-}
+
 
 export default Wine;

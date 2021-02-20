@@ -21,12 +21,12 @@ function App() {
   useEffect(() => {
     const getData = async () => {
       const resp = await axios.get(baseURL, config);
-      setProjects(resp.data)
+      setProjects(resp.data.records)
       // console.log(projects)
     };
     getData();
   }, [toggleFetch]);
-  
+
     return (
       <div className="App">
         <Nav />
@@ -46,11 +46,11 @@ function App() {
         <Route path="/new">
         <Form projects={projects} setToggleFetch={setToggleFetch}/>
         </Route>
-        <Route id="details" path="/:title">
+        <Route id="details" path="/project/:id">
           <Details projects={projects} setToggleFetch={setToggleFetch}/>
         </Route>
         <Route id="edit" path="/edit/:id">
-
+          <Form projects={projects} setToggleFetch={setToggleFetch}/>
         </Route>
       </div>
     );
