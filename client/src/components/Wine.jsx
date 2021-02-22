@@ -1,6 +1,6 @@
 import { Route, Link } from "react-router-dom";
 import { useEffect, useState } from "react";
-import Details from "./Details";
+
 
 function Wine(props) {
   const [wines, setWines] = useState([]);
@@ -15,10 +15,10 @@ function Wine(props) {
     }, [props.projects])
   
 return (
-      <div className="wines">
+      <div className="category">
         <h2>Wines</h2>
         {wines.map((wine, idx) => (
-          <div className="wine">
+          <div className="card">
             <Link key={idx} to={`/project/${wine.id}`}>
               <h4>{wine.fields.title}</h4>
             </Link>

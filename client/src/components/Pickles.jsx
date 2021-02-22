@@ -14,10 +14,10 @@ function Pickles(props) {
     }, [props.projects])
 
     return (
-      <div className="pickles">
+      <div className="category">
         <h2>Pickles</h2>
         {pickles.map((pickle, idx) => (
-          <div className="pickle">
+          <div className="card">
             <Link key={idx} to={`/misc/${pickle.id}`}>
               <h4>{pickle.fields.title}</h4>
             </Link>

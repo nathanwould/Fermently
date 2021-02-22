@@ -31,7 +31,7 @@ function App() {
     return (
       <div className="App">
         <Nav />
-        <Sidebar id="sideBar" projects={projects} setToggleFetch={setToggleFetch}/>
+          <Sidebar id="sideBar" projects={projects} setToggleFetch={setToggleFetch} />
         <Route exact path="/">
           <Home id="home" />
         </Route>

@@ -9,7 +9,7 @@ function Sidebar(props) {
   // console.log(projects);
   return (
     <div className="sideBar">
-      <Link to="/New">
+      {/* <Link to="/New">
       <h3>Add New</h3>
       </Link>
       <Link to="/wine">
@@ -23,7 +23,7 @@ function Sidebar(props) {
       </Link>
       <Link to="/misc">
         <h4>Misc</h4>
-      </Link>
+      </Link> */}
     </div>
   );
 }

@@ -125,9 +125,14 @@ function Form(props) {
       history.push("/")
     }
   }
+  // {document.addEventListener('DOMContentLoaded', function() {
+  //   var elems = document.querySelectorAll('.datepicker');
+  //   var instances = M.Datepicker.init(elems, options);
+  // });}
 
   return (
     <form onSubmit={handleSubmit}>
+      <div className="formDiv">
       <label htmlFor="title">Title:</label>
       <input
         type="text"
@@ -138,6 +143,7 @@ function Form(props) {
       <label htmlFor="date">Date Started:</label>
       <input
         type="date"
+        class="datepicker"
         id="date"
         onChange={(e) => setDate(e.target.value)}
       />
@@ -325,7 +331,8 @@ function Form(props) {
         onChange={(e) => setNotes(e.target.value)}
         value={notes}
       />
-      <button type="submit">Submit</button>
+      <button id="submit" type="submit">Submit</button>
+      </div>
     </form>
   );
 }
