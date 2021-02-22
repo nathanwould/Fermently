@@ -8,6 +8,7 @@ import Sidebar from "./components/Sidebar";
 import Wine from "./components/Wine";
 import Beer from "./components/Beer";
 import Pickles from "./components/Pickles";
+import Misc from "./components/Misc";
 import Form from "./components/Form";
 import './App.css';
 import Details from "./components/Details.jsx";
@@ -42,6 +43,9 @@ function App() {
         </Route>
         <Route path="/pickles">
           <Pickles projects={projects} />
+        </Route>
+        <Route path="/misc">
+          <Misc projects={projects}/>
         </Route>
         <Route path="/new">
         <Form projects={projects} setToggleFetch={setToggleFetch}/>

@@ -17,8 +17,26 @@ function Form(props) {
   const [field6, setField6] = useState('');
   const [field7, setField7] = useState('');
   const [field8, setField8] = useState('');
-  const [ingredients, setIngredients] = useState('');
-  const [method, setMethod] = useState('');
+  const [ingredient1, setIngredient1] = useState('');
+  const [ingredient2, setIngredient2] = useState('');
+  const [ingredient3, setIngredient3] = useState('');
+  const [ingredient4, setIngredient4] = useState('');
+  const [ingredient5, setIngredient5] = useState('');
+  const [ingredient6, setIngredient6] = useState('');
+  const [ingredient7, setIngredient7] = useState('');
+  const [ingredient8, setIngredient8] = useState('');
+  const [ingredient9, setIngredient9] = useState('');
+  const [ingredient10, setIngredient10] = useState('');
+  const [ingredient11, setIngredient11] = useState('');
+  const [ingredient12, setIngredient12] = useState('');
+  const [method1, setMethod1] = useState('');
+  const [method2, setMethod2] = useState('');
+  const [method3, setMethod3] = useState('');
+  const [method4, setMethod4] = useState('');
+  const [method5, setMethod5] = useState('');
+  const [method6, setMethod6] = useState('');
+  const [method7, setMethod7] = useState('');
+  const [method8, setMethod8] = useState('');
   const [notes, setNotes] = useState('');
 
   useEffect(() => {
@@ -37,8 +55,26 @@ function Form(props) {
         setField6(foundProject.fields.field6)
         setField7(foundProject.fields.field7)
         setField8(foundProject.fields.field8)
-        setIngredients(foundProject.fields.ingredients)
-        setMethod(foundProject.fields.method)
+        setIngredient1(foundProject.fields.ingredient1)
+        setIngredient2(foundProject.fields.ingredient2)
+        setIngredient3(foundProject.fields.ingredient3)
+        setIngredient4(foundProject.fields.ingredient4)
+        setIngredient5(foundProject.fields.ingredient5)
+        setIngredient6(foundProject.fields.ingredient6)
+        setIngredient7(foundProject.fields.ingredient7)
+        setIngredient8(foundProject.fields.ingredient8)
+        setIngredient9(foundProject.fields.ingredient9)
+        setIngredient10(foundProject.fields.ingredient10)
+        setIngredient11(foundProject.fields.ingredient11)
+        setIngredient12(foundProject.fields.ingredient12)
+        setMethod1(foundProject.fields.method1)
+        setMethod2(foundProject.fields.method2)
+        setMethod3(foundProject.fields.method3)
+        setMethod4(foundProject.fields.method4)
+        setMethod5(foundProject.fields.method5)
+        setMethod6(foundProject.fields.method6)
+        setMethod7(foundProject.fields.method7)
+        setMethod8(foundProject.fields.method8)
         setNotes(foundProject.fields.notes)
       }
   }
@@ -58,8 +94,26 @@ function Form(props) {
       field6,
       field7,
       field8,
-      ingredients,
-      method,
+      ingredient1,
+      ingredient2,
+      ingredient3,
+      ingredient4,
+      ingredient5,
+      ingredient6,
+      ingredient7,
+      ingredient8,
+      ingredient9,
+      ingredient10,
+      ingredient11,
+      ingredient12,
+      method1,
+      method2,
+      method3,
+      method4,
+      method5,
+      method6,
+      method7,
+      method8,
       notes,
     };
     if (params.id) {
@@ -153,16 +207,117 @@ function Form(props) {
         onChange={(e) => setField8(e.target.value)}
         value={field8}
       />
-      <label htmlFor="ingredients">Ingredients:</label>
-      <textarea
-        id="ingredients"
-        onChange={(e) => setIngredients(e.target.value)}
-        value={ingredients}/>
+      <div className="ingredientInputs">
+      <label htmlFor="ingredient">Ingredients:</label>
+      <input
+        type="text"
+        className="ingredient"
+        onChange={(e) => setIngredient1(e.target.value)}
+          value={ingredient1} />
+        <input
+        type="text"
+        className="ingredient"
+        onChange={(e) => setIngredient2(e.target.value)}
+          value={ingredient2} />
+        <input
+        type="text"
+        className="ingredient"
+        onChange={(e) => setIngredient3(e.target.value)}
+          value={ingredient3} />
+        <input
+        type="text"
+        className="ingredient"
+        onChange={(e) => setIngredient4(e.target.value)}
+          value={ingredient4} />
+        <input
+        type="text"
+        className="ingredient"
+        onChange={(e) => setIngredient5(e.target.value)}
+          value={ingredient5} />
+        <input
+        type="text"
+        className="ingredient"
+        onChange={(e) => setIngredient6(e.target.value)}
+          value={ingredient6} />
+        <input
+        type="text"
+        className="ingredient"
+        onChange={(e) => setIngredient7(e.target.value)}
+          value={ingredient7} />
+        <input
+        type="text"
+        className="ingredient"
+        onChange={(e) => setIngredient8(e.target.value)}
+          value={ingredient8} />
+        <input
+        type="text"
+        className="ingredient"
+        onChange={(e) => setIngredient9(e.target.value)}
+          value={ingredient9} />
+        <input
+        type="text"
+        className="ingredient"
+        onChange={(e) => setIngredient10(e.target.value)}
+          value={ingredient10} />
+        <input
+        type="text"
+        className="ingredient"
+        onChange={(e) => setIngredient11(e.target.value)}
+          value={ingredient11} />
+        <input
+        type="text"
+        className="ingredient"
+        onChange={(e) => setIngredient12(e.target.value)}
+          value={ingredient12} />
+        </div>
       <label htmlFor="method">Method:</label>
-      <textarea
-        id="method"
-        onChange={(e) => setMethod(e.target.value)}
-        value={method}
+      <input
+        type="text"
+        className="method"
+        onChange={(e) => setMethod1(e.target.value)}
+        value={method1}
+      />
+      <input
+        type="text"
+        className="method"
+        onChange={(e) => setMethod2(e.target.value)}
+        value={method2}
+      />
+      <input
+        type="text"
+        className="method"
+        onChange={(e) => setMethod3(e.target.value)}
+        value={method3}
+      />
+      <input
+        type="text"
+        className="method"
+        onChange={(e) => setMethod4(e.target.value)}
+        value={method4}
+      />
+      <input
+        type="text"
+        className="method"
+        onChange={(e) => setMethod5(e.target.value)}
+        value={method5}
+      />
+      <input
+        type="text"
+        className="method"
+        onChange={(e) => setMethod6(e.target.value)}
+        value={method6}
+      />
+      <input
+        type="text"
+        className="method"
+        onChange={(e) => setMethod7(e.target.value)}
+        value={method7}
+      />
+      <input
+        type="text"
+        className="method"
+        onChange={(e) => setMethod8(e.target.value)}
+        value={method8}
       />
       <label htmlFor>Notes:</label>
       <textarea

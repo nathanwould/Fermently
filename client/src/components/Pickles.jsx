@@ -18,7 +18,7 @@ function Pickles(props) {
         <h2>Pickles</h2>
         {pickles.map((pickle, idx) => (
           <div className="pickle">
-            <Link key={idx} to={`/project/${pickle.id}`}>
+            <Link key={idx} to={`/misc/${pickle.id}`}>
               <h4>{pickle.fields.title}</h4>
             </Link>
           </div>

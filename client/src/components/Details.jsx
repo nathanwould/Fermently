@@ -5,19 +5,9 @@ import { baseURL, config } from "../services";
 
 function Details(props) {
   const params = useParams();
-  // const [project, setProject] = useState([])
-
-  // useEffect(() => {
-  //   if (props.projects) {
-  // const dataPlease = props.projects.find((project) => params.id === project.id)
-  //     setProject(dataPlease)
-  //   }
-  // }, [props.projects])
 
   const project = props.projects.find((project) => project.id === params.id)
   console.log(project)
-
-
 
   const deleteProject = async () => {
     const projectURL = `${baseURL}/${props.projects.id}`;
@@ -37,8 +27,32 @@ function Details(props) {
       <h4>{project.fields.field6}</h4>
       <h4>{project.fields.field7}</h4>
       <h4>{project.fields.field8}</h4>
-      <p>{project.fields.ingredients}</p>
-      <p>{project.fields.method}</p>
+      <div className="ingredientsDiv">
+      <h4>Ingredients</h4>
+        <p>{project.fields.ingredient1}</p>
+        <p>{project.fields.ingredient2}</p>
+        <p>{project.fields.ingredient3}</p>
+        <p>{project.fields.ingredient4}</p>
+        <p>{project.fields.ingredient5}</p>
+        <p>{project.fields.ingredient6}</p>
+        <p>{project.fields.ingredient7}</p>
+        <p>{project.fields.ingredient8}</p>
+        <p>{project.fields.ingredient9}</p>
+        <p>{project.fields.ingredient10}</p>
+        <p>{project.fields.ingredient11}</p>
+        <p>{project.fields.ingredient12}</p>
+      </div>
+      <div className="methodDiv">
+      <h4>Method</h4>
+        <p>{project.fields.method1}</p>
+        <p>{project.fields.method2}</p>
+        <p>{project.fields.method3}</p>
+        <p>{project.fields.method4}</p>
+        <p>{project.fields.method5}</p>
+        <p>{project.fields.method6}</p>
+        <p>{project.fields.method7}</p>
+        <p>{project.fields.method8}</p>
+      </div>
       <p>{project.fields.notes}</p> 
       <Link to={`/edit/${project.id}`}>
         <button id="editButton">Edit</button>
