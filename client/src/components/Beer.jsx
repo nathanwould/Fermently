@@ -20,6 +20,7 @@ function Beer(props) {
           <div className="card">
             <Link key={idx} to={`/project/${beer.id}`}>
               <h4>{beer.fields.title}</h4>
+              <p>{beer.fields.date}</p>
             </Link>
           </div>
         ))}

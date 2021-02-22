@@ -133,30 +133,34 @@ function Form(props) {
   return (
     <form onSubmit={handleSubmit}>
       <div className="formDiv">
-      <label htmlFor="title">Title:</label>
-      <input
-        type="text"
-        id="title"
+      <div id="title">
+        <label htmlFor="title">Title:</label>
+        <input
+        type="textInput"
         onChange={(e) => setTitle(e.target.value)}
         value={title}
-      />
-      <label htmlFor="date">Date Started:</label>
-      <input
-        type="date"
-        class="datepicker"
-        id="date"
-        onChange={(e) => setDate(e.target.value)}
-      />
-      <label htmlFor="category">Category:</label>
+            />
+        </div>
+      <div id="date">
+        <label htmlFor="date">Date Started:</label>
+        <input
+          type="date"
+          class="datepicker"
+          onChange={(e) => setDate(e.target.value)}
+          />
+        </div>
+      <div id="category">
+        <label htmlFor="category">Category:</label>
       <select
-        id="category"
         placeholder="choose category"
         onChange={(e) => setCategory(e.target.value)}>
           <option value="Wine">Wine</option>
           <option value="Beer">Beer</option>
           <option value="Pickles">Pickles</option>
           <option value="Misc.">Misc.</option>
-      </select>
+          </select>
+        </div>
+        <div id="fields">
       <label htmlFor="field1"></label>
       <input
         type="text"
@@ -212,7 +216,8 @@ function Form(props) {
         id="field8"
         onChange={(e) => setField8(e.target.value)}
         value={field8}
-      />
+          />
+          </div>
       <div className="ingredientInputs">
       <label htmlFor="ingredient">Ingredients:</label>
       <input

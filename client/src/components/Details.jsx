@@ -17,16 +17,18 @@ function Details(props) {
 
   return (
     <div id="details">
-      <h2>{project.fields.title}</h2>
-      <h4>{project.fields.date}</h4>
-      <h4>{project.fields.field1}</h4>
-      <h4>{project.fields.field2}</h4>
-      <h4>{project.fields.field3}</h4>
-      <h4>{project.fields.field4}</h4>
-      <h4>{project.fields.field5}</h4>
-      <h4>{project.fields.field6}</h4>
-      <h4>{project.fields.field7}</h4>
-      <h4>{project.fields.field8}</h4>
+      <h2 id="detailTitle">{project.fields.title}</h2>
+      <h4 id="date">Date: {project.fields.date}</h4>
+      <div id="fields">
+        <h4>{project.fields.field1}</h4>
+        <h4>{project.fields.field2}</h4>
+        <h4>{project.fields.field3}</h4>
+        <h4>{project.fields.field4}</h4>
+        <h4>{project.fields.field5}</h4>
+        <h4>{project.fields.field6}</h4>
+        <h4>{project.fields.field7}</h4>
+        <h4>{project.fields.field8}</h4>
+        </div>
       <div className="ingredientsDiv">
       <h4>Ingredients</h4>
         <p>{project.fields.ingredient1}</p>
@@ -53,7 +55,7 @@ function Details(props) {
         <p>{project.fields.method7}</p>
         <p>{project.fields.method8}</p>
       </div>
-      <p>{project.fields.notes}</p> 
+      <p>Notes: {project.fields.notes}</p> 
       <Link to={`/edit/${project.id}`}>
         <button id="editButton">Edit</button>
       </Link>
