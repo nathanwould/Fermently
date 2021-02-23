@@ -8,7 +8,7 @@ function Misc(props) {
   useEffect(() => {
       if (props.projects) {
     const dataPlease = props.projects?.filter(
-      (project) => project.fields.category === "Misc"
+      (project) => project.fields.category === "Misc."
     );
         setProjects(dataPlease)
       }
@@ -16,16 +16,18 @@ function Misc(props) {
   
 return (
       <div className="categoryContainer">
-        <h2>Misc.</h2>
+    <h2>Misc.</h2>
+    <div className="category">
         {projects.map((project, idx) => (
             <Link key={idx} to={`/project/${project.id}`}>
           <div className="card">
-              <h4>{project.fields.title}</h4>
+              <h4>🍶 {project.fields.title}</h4>
               <p id="cardDate">{project.fields.date}</p>
               <p className="cardCTA">View Details</p>
           </div>
-            </Link>
+          </Link>
         ))}
+        </div>
         </div>
     );
   }

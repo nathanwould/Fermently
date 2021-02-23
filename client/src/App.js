@@ -4,7 +4,6 @@ import { Link, Route } from "react-router-dom";
 import { baseURL, config } from "./services/index.js";
 import Nav from "./components/Nav";
 import Home from "./components/Home";
-import Sidebar from "./components/Sidebar";
 import Wine from "./components/Wine";
 import Beer from "./components/Beer";
 import Pickles from "./components/Pickles";
@@ -31,7 +30,6 @@ function App() {
     return (
       <div className="App">
         <Nav />
-          <Sidebar id="sideBar" projects={projects} setToggleFetch={setToggleFetch} />
         <Route exact path="/">
           <Home id="home" />
         </Route>

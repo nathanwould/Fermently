@@ -125,10 +125,6 @@ function Form(props) {
       history.push("/")
     }
   }
-  // {document.addEventListener('DOMContentLoaded', function() {
-  //   var elems = document.querySelectorAll('.datepicker');
-  //   var instances = M.Datepicker.init(elems, options);
-  // });}
 
   return (
     <form className="projectDetails" onSubmit={handleSubmit}>

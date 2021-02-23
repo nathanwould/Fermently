@@ -1,7 +1,7 @@
 function Home(props) {
   return (
-    <div>
-      <h2>Boy howdy!</h2>
+    <div className="welcomeMessage">
+      <p>Welcome to Fermently, the fermentation project tracker!</p>
     </div>
   );
 }

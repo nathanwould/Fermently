@@ -2,6 +2,9 @@
   text-align: left;
 }
 
+.welcomeMessage {
+margin: 30px 8px;
+}
 /* body {
   background-color: cornflowerblue;
 } */
@@ -156,6 +159,14 @@ input[type=submit]:hover {
   background-color: #45a049;
 }
 
-@media only screen and (max-width: 600px) {
+.navNew {
+  background-color: #f6ad01;
+}
+
+@media only screen and (max-width: 800px) {
+
+.categoryContainer {
+  margin-top: 48px;
+}
 
 }

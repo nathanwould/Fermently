@@ -16,15 +16,17 @@ function Pickles(props) {
     return (
       <div className="categoryContainer">
         <h2>Pickles</h2>
+        <div className="category">
         {pickles.map((pickle, idx) => (
             <Link key={idx} to={`/project/${pickle.id}`}>
           <div className="card">
-              <h4>{pickle.fields.title}</h4>
+              <h4>🥒 {pickle.fields.title}</h4>
               <p id="cardDate">{pickle.fields.date}</p>
               <p className="cardCTA">View Details</p>
           </div>
             </Link>
         ))}
+          </div>
       </div>
     );
   }

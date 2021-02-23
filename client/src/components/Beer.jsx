@@ -20,7 +20,7 @@ function Beer(props) {
         {beers.map((beer, idx) => (
             <Link key={idx} to={`/project/${beer.id}`}>
           <div className="card">
-              <h4>{beer.fields.title}</h4>
+              <h4>🍺 {beer.fields.title}</h4>
               <p id="cardDate">{beer.fields.date}</p>
               <p className="cardCTA">View Details</p>
           </div>
