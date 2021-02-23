@@ -15,14 +15,16 @@ function Wine(props) {
     }, [props.projects])
   
 return (
-      <div className="category">
+      <div className="categoryContainer">
         <h2>Wines</h2>
         {wines.map((wine, idx) => (
-          <div className="card">
             <Link key={idx} to={`/project/${wine.id}`}>
+          <div className="card">
               <h4>{wine.fields.title}</h4>
-            </Link>
+              <p id="cardDate">{wine.fields.date}</p>
+              <p className="cardCTA">View Details</p>
           </div>
+            </Link>
         ))}
         </div>
     );

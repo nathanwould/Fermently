@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  text-align: left;
 }
 
 /* body {
@@ -14,6 +14,12 @@ h4 {
 .nav {
   margin-top: 20px;
   display: grid;
+  overflow: hidden;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
 }
 
 .nav-ul {
@@ -23,7 +29,6 @@ h4 {
   padding: 0;
   width: 100%;
   background-color:#333;
-  
 }
 
 li {
@@ -44,7 +49,7 @@ li:hover {
 }
 
 .projectDetails {
-  margin-top: 30px;
+  margin: 40px 5%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 1rem;
@@ -70,13 +75,13 @@ li:hover {
   grid-row: 2;
 }
 
-.methodDiv {
+.projectMethod {
   grid-column: 2/4;
   grid-row: 3;
 }
 
 .projectNotes {
-  grid-column: 1;
+  grid-column: 1/4;
   grid-row: 4;
 }
 
@@ -93,25 +98,64 @@ li:hover {
   transition: 0.3s;
   margin: 8px 16px;
   padding: 24px;
-  /* display: flex; */
+  text-align: top;
   width: 10rem;
   background-color: white;
 }
 
 .card h4 {
-  margin-bottom: 4px;
+  margin: 4px 0;
+  font-size: larger;
 }
 
 #cardDate {
   font-size: 12px;
 }
 
-.card a {
+.categoryContainer a {
   text-decoration: none;
   color:#333;
+}
+
+.cardCTA {
+  text-decoration: underline;
+  margin-top: 36px;
 }
 
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2)
 }
 
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.titleInput {
+  margin: 4px;
+}
+
+.dateInput {
+  margin: 4px;
+}
+
+#category {
+  margin: 4px;
+}
+
+#categoryLabel {
+  margin-top: 8px;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+@media only screen and (max-width: 600px) {
+
+}

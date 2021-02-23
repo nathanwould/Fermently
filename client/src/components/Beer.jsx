@@ -18,12 +18,13 @@ function Beer(props) {
       <h2>Beers</h2>
       <div className="category">
         {beers.map((beer, idx) => (
-          <div className="card">
             <Link key={idx} to={`/project/${beer.id}`}>
+          <div className="card">
               <h4>{beer.fields.title}</h4>
               <p id="cardDate">{beer.fields.date}</p>
-            </Link>
+              <p className="cardCTA">View Details</p>
           </div>
+            </Link>
         ))}
         </div>
         </div>

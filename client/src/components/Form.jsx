@@ -133,20 +133,23 @@ function Form(props) {
   return (
     <form className="projectDetails" onSubmit={handleSubmit}>
       <div className="projectTitle">
-        <label htmlFor="title">Title:</label>
+        <label className="titleInput" htmlFor="title">Title:</label>
         <input
-        type="textInput"
+          className="titleInput"
+          type="textInput"
+          placeholder="Try Pilsner..."
         onChange={(e) => setTitle(e.target.value)}
         value={title}
             />
-        <label htmlFor="date">Date Started:</label>
+        <label className="dateInput" htmlFor="date">Date Started:</label>
         <input
+          className="dateInput"
           type="date"
           class="datepicker"
           onChange={(e) => setDate(e.target.value)}
         />
         <div id="category">
-        <label htmlFor="category">Category:</label>
+        <label id="categoryLabel" htmlFor="category">Category:</label>
       <select
         placeholder="choose category"
         onChange={(e) => setCategory(e.target.value)}>
@@ -164,7 +167,8 @@ function Form(props) {
       <label htmlFor="field1">Misc. Fields:</label>
       <input
         type="text"
-        id="field1"
+          id="field1"
+          placeholder="Try SG: 1.041"
         onChange={(e) => setField1(e.target.value)}
         value={field1}
       />
@@ -203,7 +207,7 @@ function Form(props) {
         onChange={(e) => setField6(e.target.value)}
         value={field6}
       />
-      <label htmlFor="field7"></label>
+      {/* <label htmlFor="field7"></label>
       <input
         type="text"
         id="field7"
@@ -216,13 +220,14 @@ function Form(props) {
         id="field8"
         onChange={(e) => setField8(e.target.value)}
         value={field8}
-          />
+          /> */}
           </div>
       <div className="projectIngs">
       <label htmlFor="ingredient">Ingredients:</label>
       <input
         type="text"
-        className="ingredient"
+          className="ingredient"
+          placeholder="Try 11 lbs pilsner malt..."
         onChange={(e) => setIngredient1(e.target.value)}
           value={ingredient1} />
         <input
@@ -285,7 +290,8 @@ function Form(props) {
       <label htmlFor="method">Method:</label>
       <input
         type="text"
-        className="method"
+          className="method"
+          placeholder="Try triple decoction mash..."
         onChange={(e) => setMethod1(e.target.value)}
         value={method1}
       />
@@ -333,9 +339,10 @@ function Form(props) {
         />
         </div>
       <div className="projectNotes">
-      <label htmlFor>Notes:</label>
+        <label htmlFor>Notes:</label>
       <textarea
-        id="notes"
+          id="notes"
+          placeholder="Try some tasting notes..."
         onChange={(e) => setNotes(e.target.value)}
         value={notes}
         />

@@ -15,14 +15,16 @@ function Misc(props) {
     }, [props.projects])
   
 return (
-      <div className="category">
+      <div className="categoryContainer">
         <h2>Misc.</h2>
         {projects.map((project, idx) => (
-          <div className="card">
             <Link key={idx} to={`/project/${project.id}`}>
+          <div className="card">
               <h4>{project.fields.title}</h4>
-            </Link>
+              <p id="cardDate">{project.fields.date}</p>
+              <p className="cardCTA">View Details</p>
           </div>
+            </Link>
         ))}
         </div>
     );
