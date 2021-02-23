@@ -12,8 +12,6 @@ import Form from "./components/Form";
 import './App.css';
 import Details from "./components/Details.jsx";
 
-// console.log(baseURL, config)
-
 function App() {
   const [projects, setProjects] = useState([]);
   const [toggleFetch, setToggleFetch] = useState(false);
@@ -22,7 +20,6 @@ function App() {
     const getData = async () => {
       const resp = await axios.get(baseURL, config);
       setProjects(resp.data.records)
-      // console.log(projects)
     };
     getData();
   }, [toggleFetch]);

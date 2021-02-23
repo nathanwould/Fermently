@@ -203,21 +203,7 @@ function Form(props) {
         onChange={(e) => setField6(e.target.value)}
         value={field6}
       />
-      {/* <label htmlFor="field7"></label>
-      <input
-        type="text"
-        id="field7"
-        onChange={(e) => setField7(e.target.value)}
-        value={field7}
-      />
-      <label htmlFor="field8"></label>
-      <input
-        type="text"
-        id="field8"
-        onChange={(e) => setField8(e.target.value)}
-        value={field8}
-          /> */}
-          </div>
+      </div>
       <div className="projectIngs">
       <label htmlFor="ingredient">Ingredients:</label>
       <input

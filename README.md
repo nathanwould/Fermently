@@ -89,31 +89,30 @@ Fermently is an Airtable-based application.
 |  Day | Deliverable | Status
 |---|---| ---|
 |Feb 16| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
-|Feb 16| Project Approval | Incomplete
-|Feb 16| Pseudocode| Incomplete
-|Feb 17| Core Application Structure (HTML, React component structure), Airtable exploration|Incomplete
-|Feb 18| Initial Clickable Model, CSS styling |	Incomplete
-|Feb 19| MVP |Incomplete
-|Feb 20| Post-MVP | Incomplete
+|Feb 16| Project Approval | Complete
+|Feb 16| Pseudocode| Complete
+|Feb 17| Core Application Structure (HTML, React component structure), Airtable exploration|Complete
+|Feb 18| Initial Clickable Model, CSS styling |	Complete
+|Feb 19| MVP |Complete
+|Feb 20| Post-MVP | Complete
 |Feb 23| Presentations | Incomplete
 
 ## Timeframes
 
 | Component | Priority | Estimated Time | Actual Time |
 |---|---|---|---|
-| Core app html |   H   | 1hr | -   |
-|Component structure and function|    H  | 4hrs |  -
-|API data integration | H | 2hrs | -
-|Formatting project display | H | 4hrs | -
-|Airtable exploration | H | 4hrs | -
-|Formatting new project form | H | 4hrs |	-
-|Edit form functionality | H | 2hrs | -
-|CSS styling | H | 2hrs | -
+| Core app html |   H   | 1hr | 1hr   |
+|Component structure and function|    H  | 4hrs |  6hrs
+|API data integration | H | 2hrs | 1hr
+|Formatting project display | H | 4hrs | 4hrs
+|Airtable exploration | H | 4hrs | 4hrs
+|Formatting new project form | H | 4hrs |	4hrs
+|Edit form functionality | H | 2hrs | 2hrs
+|CSS styling | H | 4hrs | 6hrs
 |Adding resources | L | 2hrs | -
-|Adding additional custom fields | M | 2hrs | -
-|Adding styling to look more ferment-y | L | 2hrs | -
-|Transitions| M | 1hr | -
-|Total|	- | 30hrs | -
+|Adding additional custom fields | M | 3hrs | 1hr
+
+|Total|	- | 30hrs | 29hrs
 
 ## SWOT Analysis
 

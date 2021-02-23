@@ -1,5 +1,5 @@
 import axios from "axios";
-import { Route, Link, useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { baseURL, config } from "../services";
 
 function Details(props) {

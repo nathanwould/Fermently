@@ -1,4 +1,4 @@
-import { Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 
@@ -31,6 +31,5 @@ return (
         </div>
     );
   }
-
 
 export default Wine;
