@@ -1,16 +1,14 @@
 import axios from "axios";
 import { Route, Link, useParams } from "react-router-dom";
-import { useState, useEffect } from "react";
 import { baseURL, config } from "../services";
 
 function Details(props) {
   const params = useParams();
 
   const project = props.projects.find((project) => project.id === params.id)
-  console.log(project)
 
   const deleteProject = async () => {
-    const projectURL = `${baseURL}/${props.projects.id}`;
+    const projectURL = `${baseURL}/${project.id}`;
     await axios.delete(projectURL, config);
     props.setToggleFetch((curr) => !curr)
   }
@@ -24,8 +22,10 @@ function Details(props) {
       <div className="projectActions">
       <Link to={`/edit/${project.id}`}>
         <button id="editButton">Edit</button>
-      </Link>
-        <button onClick={deleteProject}>Remove</button>
+        </Link>
+        <Link to="/">
+          <button onClick={deleteProject}>Remove</button>
+        </Link>
         </div>
       <div className="projectFields">
         <h4>{project.fields.field1}</h4>

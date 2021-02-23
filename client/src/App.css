@@ -151,8 +151,8 @@ input[type=text] {
   margin: 4px;
 }
 
-#categoryLabel {
-  margin-top: 8px;
+label {
+  margin-right: 8px;
 }
 
 input[type=submit]:hover {
@@ -169,4 +169,7 @@ input[type=submit]:hover {
   margin-top: 48px;
 }
 
+.projectDetails {
+  margin-top: 48px;
+}
 }
