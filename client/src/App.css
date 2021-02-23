@@ -2,12 +2,8 @@
   text-align: center;
 }
 
-/* .nav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  background-color: red;
+/* body {
+  background-color: cornflowerblue;
 } */
 
 h4 {
@@ -47,73 +43,75 @@ li:hover {
   float: left;
 }
 
-.category {
+.projectDetails {
+  margin-top: 30px;
   display: grid;
-  padding-top: 30px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.projectTitle {
+  grid-column: 1/3;
+  grid-row: 1;
+}
+
+.projectActions {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.projectIngs {
+  grid-column: 1;
+  grid-row: 2/4;
+}
+
+.projectFields {
+  grid-column: 2/4;
+  grid-row: 2;
+}
+
+.methodDiv {
+  grid-column: 2/4;
+  grid-row: 3;
+}
+
+.projectNotes {
+  grid-column: 1;
+  grid-row: 4;
+}
+
+.categoryContainer {
+  padding: 30px 20px;
+}
+
+.category {
+  display: flex;
 }
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   margin: 8px 16px;
-  padding: 8px, 16px;
+  padding: 24px;
+  /* display: flex; */
   width: 10rem;
+  background-color: white;
 }
 
-.card p {
+.card h4 {
+  margin-bottom: 4px;
+}
+
+#cardDate {
+  font-size: 12px;
+}
+
+.card a {
   text-decoration: none;
+  color:#333;
 }
 
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2)
 }
 
-form {
-  padding: 70px 20px 20px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
-
-button {
-  background-color: #333;
-  color: white;
-  width: 100%;
-  margin-top: 8px;
-  border-radius: 4px;
-}
-
-input {
-  margin: 2px;
-  padding: 2px;
-}
-
-.formDiv {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-#title {
-  grid-column: 1 / 2;
-  grid-row: 1 / span 1;
-}
-
-#date {
-  grid-column: 2 / 4;
-  grid-row: 1 / span 1;
-}
-
-/* #fields {
-  grid-template-columns: 1 / 4;
-  grid-template-rows: 2 / span 1;
-} */
-
-#category {
-  grid-row: 1 / span 1;
-  grid-column: 4 / span 1;
-
-}
-
-#details {
-  display: grid;
-  padding-top: 30px;
-}

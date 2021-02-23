@@ -131,25 +131,21 @@ function Form(props) {
   // });}
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div className="formDiv">
-      <div id="title">
+    <form className="projectDetails" onSubmit={handleSubmit}>
+      <div className="projectTitle">
         <label htmlFor="title">Title:</label>
         <input
         type="textInput"
         onChange={(e) => setTitle(e.target.value)}
         value={title}
             />
-        </div>
-      <div id="date">
         <label htmlFor="date">Date Started:</label>
         <input
           type="date"
           class="datepicker"
           onChange={(e) => setDate(e.target.value)}
-          />
-        </div>
-      <div id="category">
+        />
+        <div id="category">
         <label htmlFor="category">Category:</label>
       <select
         placeholder="choose category"
@@ -160,8 +156,12 @@ function Form(props) {
           <option value="Misc.">Misc.</option>
           </select>
         </div>
-        <div id="fields">
-      <label htmlFor="field1"></label>
+        </div>
+        <div className="projectActions">
+          <button id="submit" type="submit">Save</button>
+        </div>
+        <div className="projectFields">
+      <label htmlFor="field1">Misc. Fields:</label>
       <input
         type="text"
         id="field1"
@@ -218,7 +218,7 @@ function Form(props) {
         value={field8}
           />
           </div>
-      <div className="ingredientInputs">
+      <div className="projectIngs">
       <label htmlFor="ingredient">Ingredients:</label>
       <input
         type="text"
@@ -280,7 +280,8 @@ function Form(props) {
         className="ingredient"
         onChange={(e) => setIngredient12(e.target.value)}
           value={ingredient12} />
-        </div>
+      </div>
+      <div className="projectMethod">
       <label htmlFor="method">Method:</label>
       <input
         type="text"
@@ -329,16 +330,17 @@ function Form(props) {
         className="method"
         onChange={(e) => setMethod8(e.target.value)}
         value={method8}
-      />
+        />
+        </div>
+      <div className="projectNotes">
       <label htmlFor>Notes:</label>
       <textarea
         id="notes"
         onChange={(e) => setNotes(e.target.value)}
         value={notes}
-      />
-      <button id="submit" type="submit">Submit</button>
-      </div>
-    </form>
+        />
+        </div>
+      </form>
   );
 }
 

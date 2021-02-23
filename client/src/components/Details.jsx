@@ -16,10 +16,18 @@ function Details(props) {
   }
 
   return (
-    <div id="details">
+    <div className="projectDetails">
+      <div className="projectTitle">
       <h2 id="detailTitle">{project.fields.title}</h2>
-      <h4 id="date">Date: {project.fields.date}</h4>
-      <div id="fields">
+        <h4 id="date">Started: {project.fields.date}</h4>
+      </div>
+      <div className="projectActions">
+      <Link to={`/edit/${project.id}`}>
+        <button id="editButton">Edit</button>
+      </Link>
+        <button onClick={deleteProject}>Remove</button>
+        </div>
+      <div className="projectFields">
         <h4>{project.fields.field1}</h4>
         <h4>{project.fields.field2}</h4>
         <h4>{project.fields.field3}</h4>
@@ -29,8 +37,8 @@ function Details(props) {
         <h4>{project.fields.field7}</h4>
         <h4>{project.fields.field8}</h4>
         </div>
-      <div className="ingredientsDiv">
-      <h4>Ingredients</h4>
+      <div className="projectIngs">
+      <h4>Ingredients:</h4>
         <p>{project.fields.ingredient1}</p>
         <p>{project.fields.ingredient2}</p>
         <p>{project.fields.ingredient3}</p>
@@ -45,7 +53,7 @@ function Details(props) {
         <p>{project.fields.ingredient12}</p>
       </div>
       <div className="methodDiv">
-      <h4>Method</h4>
+      <h4>Method:</h4>
         <p>{project.fields.method1}</p>
         <p>{project.fields.method2}</p>
         <p>{project.fields.method3}</p>
@@ -55,11 +63,9 @@ function Details(props) {
         <p>{project.fields.method7}</p>
         <p>{project.fields.method8}</p>
       </div>
-      <p>Notes: {project.fields.notes}</p> 
-      <Link to={`/edit/${project.id}`}>
-        <button id="editButton">Edit</button>
-      </Link>
-      <button onClick={deleteProject}>Delete Project</button>
+      <div className="projectNotes">
+        <p>Notes: {project.fields.notes}</p> 
+        </div>
     </div>
   )
 }

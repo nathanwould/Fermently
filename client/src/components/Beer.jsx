@@ -14,17 +14,19 @@ function Beer(props) {
   }, [props.projects])
   
     return (
+      <div className="categoryContainer">
+      <h2>Beers</h2>
       <div className="category">
-        <h2>Beers</h2>
         {beers.map((beer, idx) => (
           <div className="card">
             <Link key={idx} to={`/project/${beer.id}`}>
               <h4>{beer.fields.title}</h4>
-              <p>{beer.fields.date}</p>
+              <p id="cardDate">{beer.fields.date}</p>
             </Link>
           </div>
         ))}
-      </div>
+        </div>
+        </div>
     );
 }
 
